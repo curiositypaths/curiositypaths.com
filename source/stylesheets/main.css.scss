@@ -2,3 +2,45 @@
 @import "normalize";
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+body {
+  background: #FF512F;
+  background: -webkit-linear-gradient(to righ, #FF512F , #F09819);
+  background: linear-gradient(to left, #FF512F , #F09819);
+}
+
+.welcome-page-container {
+  @include outer-container;
+}
+
+.ciao {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.ciao-text {
+  font-size: 2.5rem;
+  font-family: "soleil",sans-serif;
+  line-height: 1.3em;
+  color: white;
+
+}
+
+.f-de-gregori-bene-container {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.f-de-gregori-bene {
+  display: none;
+}
+
+.f-de-gregori {
+  display: none;
+  text-align:right;
+}
+
+
+
+
+
