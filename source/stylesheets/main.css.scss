@@ -4,13 +4,18 @@
 @import "neat/neat";
 
 body {
-  background: #FF512F;
-  background: -webkit-linear-gradient(to righ, #FF512F , #F09819);
-  background: linear-gradient(to left, #FF512F , #F09819);
+
+
+
+ background: #00c6ff; /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .welcome-page-container {
   @include outer-container;
+  margin-top: 40px;
 }
 
 .ciao {
@@ -20,9 +25,9 @@ body {
 
 .ciao-text {
   font-size: 2.5rem;
-  font-family: "soleil",sans-serif;
+  font-family: "vag-rundschrift-d",georgia;
   line-height: 1.3em;
-  color: #eee8d5;
+  color: #FDF6E3;
 }
 
 .f-de-gregori-bene-container {
